@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>ROCK PAPER SCISSOR</h1>
+
+    <div class="container">
+      <div class="left">
+        <h2>USER</h2>
+        <button class="user"><img src="./rock.png" alt="" class="img" /></button
+        ><button class="user">
+          <img src="./paper.png" alt="" class="img" /></button
+        ><button class="user">
+          <img src="./scissors.png" alt="" class="img" />
+        </button>
+      </div>
+      <div class="middle">
+        <div class="clash-container">
+          <img src="./rock.png" alt="" class="user-choice" />
+          <img src="./rock.png" alt="" class="cpu-choice" />
+        </div>
+
+        <h2 class="winner">WINNER</h2>
+      </div>
+      <div class="right">
+        <h2>CPU</h2>
+        <button class="cpu"><img src="./rock.png" alt="" class="img" /></button
+        ><button class="cpu">
+          <img src="./paper.png" alt="" class="img" /></button
+        ><button class="cpu">
+          <img src="./scissors.png" alt="" class="img" />
+        </button>
+      </div>
+    </div>
+
+    <p class="score">USER SCORE: <span class="user-score">0</span></p>
+    <p class="score">CPU SCORE: <span class="cpu-score">0</span></p>
+
+    <script src="main.js"></script>
+  </body>
+</html>
