@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: #f0f0f0;
+}
+
+.container {
+  width: 400px;
+  background: white;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.amount p,
+.from p,
+.to p {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.amount input {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.from,
+.to {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 48%;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.select-container img {
+  width: 40px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+select {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+i {
+  font-size: 20px;
+  margin-top: 30px;
+  color: #666;
+}
+
+.bottom {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.msg {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6a0dad;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #5300a8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .dropdown {
+    flex-direction: column; /* Stack dropdowns on smaller screens */
+  }
+
+  .from,
+  .to {
+    width: 100%; /* Make dropdowns full width */
+  }
+
+  i {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 22px;
+  }
+
+  .amount input {
+    font-size: 16px;
+  }
+
+  .msg {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
