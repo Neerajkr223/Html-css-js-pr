@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  position: relative;
+  overflow: hidden;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 175px;
+  font-family: sans-serif;
+  cursor: pointer;
+  border: 0;
+  background: none;
+}
+
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(4),
+.box:nth-child(5) {
+  border-bottom: 3px solid red;
+  border-right: 3px solid red;
+}
+
+.box:nth-child(3),
+.box:nth-child(6) {
+  border-bottom: 3px solid red;
+}
+
+.box:nth-child(7),
+.box:nth-child(8) {
+  border-right: 3px solid red;
+}
+
+.icon {
+  font-size: 100px;
+  pointer-events: none;
+  color: rgba(0, 0, 0, 0.71);
+}
+
+.reset {
+  padding: 10px 40px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+  border: none;
+}
+
+.line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3px;
+  height: 150%;
+  background: rgba(0, 0, 0, 0.527);
+  display: none;
+}
+.middle-vertical {
+  display: block;
+}
+
+.diagonal-left {
+  transform: translate(-50%, -50%) rotate(-45deg);
+  display: block;
+}
+
+.diagonal-right {
+  transform: translate(-50%, -50%) rotate(-135deg);
+  display: block;
+}
+
+.middle-horizontal {
+  transform: translate(-50%, -50%) rotate(-90deg);
+  display: block;
+}
+
+.left-vertical {
+  left: 17.5%;
+  display: block;
+}
+
+.right-vertical {
+  left: 83.5%;
+  display: block;
+}
+
+.top-horizontal {
+  transform: translate(-50%, -50%) rotate(-90deg);
+  top: 17.5%;
+  display: block;
+}
+
+.bottom-horizontal {
+  transform: translate(-50%, -50%) rotate(-90deg);
+  top: 82.5%;
+  display: block;
+}
+.message {
+  color: royalblue;
+  margin-top: 20px;
+}
